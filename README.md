@@ -1,11 +1,10 @@
 # trendy
 server that lists trending topics, given a set of RSS feed urls
 
-If you want to use Google Language API to determine topics, follow Step 1 outlined [here](https://cloud.google.com/natural-language/docs/quickstart-client-libraries?authuser=1#before-you-begin)
-
-Save the credentials in your `/app` directory as `trendy-creds.json`
-
-Once this is done, you can set `USE_LANGUAGE_API` to `true` in `docker-compose.yml`
+If you want to use Google Language API to determine topics:
+- follow Step 1 outlined [here](https://cloud.google.com/natural-language/docs/quickstart-client-libraries?authuser=1#before-you-begin)
+- Save the credentials in your `/app` directory as `trendy-creds.json`
+- Once this is done, you can set `USE_LANGUAGE_API` to `true` in `docker-compose.yml`
 
 Otherwise, the topics are determined using regex
 
