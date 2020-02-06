@@ -3,8 +3,8 @@ from datetime import datetime
 from flask import Blueprint
 
 import config
-import src.lib.google_language as lang
-import src.lib.feeds as feeds
+import src.google_language as lang
+import src.feeds as feeds
 
 
 routes = Blueprint('trending', __name__)
