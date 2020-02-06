@@ -1,10 +1,8 @@
-import json
-from datetime import datetime
-from flask import Blueprint
-
 import config
-import src.google_language as lang
+import json
 import src.feeds as feeds
+
+from flask import Blueprint
 
 
 routes = Blueprint('trending', __name__)

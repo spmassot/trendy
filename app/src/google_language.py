@@ -1,5 +1,6 @@
-from google.cloud import language_v1 as language
 import config
+
+from google.cloud import language_v1 as language
 
 
 class LanguageClient:
