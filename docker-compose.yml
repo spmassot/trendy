@@ -1,0 +1,17 @@
+version: "3.6"
+
+services:
+  server:
+    ports:
+      - "8888:8888"
+    build:
+      context: .
+    command: bash -c "python3 app.py"
+    volumes:
+      - ./app:/app
+    environment:
+      - PYTHONPATH=/app
+      - GOOGLE_APPLICATION_CREDENTIALS=trendy-creds.json
+      - USE_LANGUAGE_API=false
+    stdin_open: true
+    tty: true
